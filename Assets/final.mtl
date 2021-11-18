@@ -1,0 +1,340 @@
+# File produced by TechSoft3D HOOPS Exchange v14.2.0
+
+newmtl Material_0
+Kd 0.89803922 0.92156863 0.92941177
+Ka 0.89803922 0.92156863 0.92941177
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_5
+Kd 0.79215688 0.81960785 0.93333334
+Ka 0.79215688 0.81960785 0.93333334
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_1
+Kd 0 0.7019608 0.05882353
+Ka 0 0.7019608 0.05882353
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_2
+Kd 0.96078432 0.06666667 0
+Ka 0.96078432 0.06666667 0
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_3
+Kd 0.63921571 0.66666669 0.67843139
+Ka 0.63921571 0.66666669 0.67843139
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_4
+Kd 0.27058825 1 0.98431373
+Ka 0.27058825 1 0.98431373
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_7
+Kd 0.89803922 0.91764706 0.92941177
+Ka 0.89803922 0.91764706 0.92941177
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_6
+Kd 0.29803923 0.29803923 0.29803923
+Ka 0.29803923 0.29803923 0.29803923
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_8
+Kd 0.89411765 0.9137255 0.92941177
+Ka 0.89411765 0.9137255 0.92941177
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_9
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_10
+Kd 0.035294119 0.8509804 0.95294118
+Ka 0.035294119 0.8509804 0.95294118
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_11
+Kd 0.49803922 0.49803922 0.49803922
+Ka 0.49803922 0.49803922 0.49803922
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_12
+Kd 0.69411767 0.098039217 0.098039217
+Ka 0.69411767 0.098039217 0.098039217
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_13
+Kd 0.54509807 1 0.45882353
+Ka 0.54509807 1 0.45882353
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_14
+Kd 0.50588238 1 0.70588237
+Ka 0.50588238 1 0.70588237
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_15
+Kd 0.8509804 0.8509804 0.8509804
+Ka 0.8509804 0.8509804 0.8509804
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_16
+Kd 1 0.80784315 0.49803922
+Ka 1 0.80784315 0.49803922
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_17
+Kd 1 0.81176472 0.50196081
+Ka 1 0.81176472 0.50196081
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_18
+Kd 0.98039216 1 0.89019608
+Ka 0.98039216 1 0.89019608
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_19
+Kd 1 0.90980393 0.61960787
+Ka 1 0.90980393 0.61960787
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_20
+Kd 0.51764709 0.52941179 0.54901963
+Ka 0.51764709 0.52941179 0.54901963
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_21
+Kd 1 0.65098041 0.63137257
+Ka 1 0.65098041 0.63137257
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_22
+Kd 0.2 0.40000001 0.69803923
+Ka 0.2 0.40000001 0.69803923
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_23
+Kd 1 0.96078432 0.92941177
+Ka 1 0.96078432 0.92941177
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_24
+Kd 0.85882354 0.85882354 0.85882354
+Ka 0.85882354 0.85882354 0.85882354
+Ks 0 0 0
+Ke 0 0 0
+d 0.098039217
+illum 1
+
+newmtl Material_25
+Kd 0 0.50196081 1
+Ka 0 0.50196081 1
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_26
+Kd 1 0.93725491 0.13725491
+Ka 1 0.93725491 0.13725491
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_27
+Kd 1 0.94901961 0.90980393
+Ka 1 0.94901961 0.90980393
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_28
+Kd 0.28627452 0.66274512 0.32941177
+Ka 0.28627452 0.66274512 0.32941177
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_29
+Kd 0.0078431377 0.23921569 0.82352942
+Ka 0.0078431377 0.23921569 0.82352942
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_31
+Kd 0.40000001 0.69803923 1
+Ka 0.40000001 0.69803923 1
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_32
+Kd 0.75294119 0.75294119 0.75294119
+Ka 0.75294119 0.75294119 0.75294119
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_33
+Kd 0.50196081 0.50196081 0.50196081
+Ka 0.50196081 0.50196081 0.50196081
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_35
+Kd 0.69803923 0.69803923 0.69803923
+Ka 0.69803923 0.69803923 0.69803923
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_36
+Kd 0.50196081 1 1
+Ka 0.50196081 1 1
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_41
+Kd 0.29411766 0.29411766 0.29411766
+Ka 0.29411766 0.29411766 0.29411766
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_37
+Kd 0 1 0
+Ka 0 1 0
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_38
+Kd 0.49411765 0.49411765 0.49411765
+Ka 0.49411765 0.49411765 0.49411765
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_39
+Kd 0.098039217 0.098039217 0.098039217
+Ka 0.098039217 0.098039217 0.098039217
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_40
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+d 0.49803922
+illum 1
+
+newmtl Material_30
+Kd 0.7764706 0.75686276 0.73725492
+Ka 0.7764706 0.75686276 0.73725492
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_42
+Kd 0.61960787 0.40784314 0.2
+Ka 0.61960787 0.40784314 0.2
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_43
+Kd 0 0.65882355 0.56862748
+Ka 0 0.65882355 0.56862748
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_44
+Kd 0.64313728 0.6156863 0.60000002
+Ka 0.64313728 0.6156863 0.60000002
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_45
+Kd 1 0.93725491 0.8392157
+Ka 1 0.93725491 0.8392157
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_34
+Kd 1 0 0
+Ka 1 0 0
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_46
+Kd 0 0 1
+Ka 0 0 1
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
+newmtl Material_47
+Kd 1 1 0
+Ka 1 1 0
+Ks 0 0 0
+Ke 0 0 0
+illum 1
+
