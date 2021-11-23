@@ -19,17 +19,17 @@ public class colision_tapa : MonoBehaviour
     {
         float speed=100f;
         pos_inicial=rb.transform.position;
-        Vector3 pos_valvula= new Vector3(seguir_valvula.objeto.x-0.5771f,seguir_valvula.objeto.y-0.355f,seguir_valvula.objeto.z-0.485f);
+        Vector3 pos_valvula= new Vector3(seguir_valvula.objeto.x-0.575f,seguir_valvula.objeto.y-0.3873f,seguir_valvula.objeto.z-0.49f);
         if (mover_tapa==1)
         {
             rb.transform.position=Vector3.Lerp(pos_inicial,pos_valvula,speed*Time.deltaTime);
         }
-        print("posición valvula: "+pos_valvula);
+        
         
     }
     void OnCollisionEnter(Collision col){
         
-        if (col.gameObject.name=="valvula_vacio")
+        if (col.gameObject.name=="base")
         {
             mover_tapa=1;
         }

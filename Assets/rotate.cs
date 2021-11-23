@@ -39,11 +39,12 @@ public class rotate : MonoBehaviour
             
             }
         }
-        if (rb.transform.rotation.z<=0.87 && regresar==0){
-            rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(final),step);
+        if (rb.transform.rotation.z<=0.87 && regresar==0 && contar%2==1){
+                rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(final),step);
             
-        }
+            }
         
+        print("contar: "+contar);
         
         if(rb.transform.rotation.z<-0.11 && regresar==1){
             regresar=0;

@@ -25,8 +25,8 @@ public class piston : MonoBehaviour
         yield return new WaitForSeconds(1);
         empezar=1;
     }
-    private Vector3 final= new Vector3(0.1064f,0.8109f,-0.045f);
-    private Vector3 final_1= new Vector3(0.1064f,0.8109f,-0.046f);
+    private Vector3 final= new Vector3(0.1064f,0.8109f,-0.043f);
+    private Vector3 final_1= new Vector3(0.1064f,0.8109f,-0.044f);
     private Vector3 inicial= new Vector3(0.1064f,0.8109f,-0.128f);
     private Vector3 inicial_1= new Vector3(0.1064f,0.8109f,-0.127f);
     
