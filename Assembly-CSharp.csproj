@@ -50,6 +50,7 @@
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonData.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_ArcadeSession.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonException.cs" />
+     <Compile Include="Assets\piston.cs" />
      <Compile Include="Assets\rotate.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_Deeplink.cs" />
      <Compile Include="Assets\Viveport\Scripts\Viveport_Internal.cs" />
@@ -59,7 +60,8 @@
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_IAP.cs" />
      <Compile Include="Assets\Viveport\Scripts\PEMKeyLoader.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_DLC.cs" />
-     <Compile Include="Assets\piston.cs" />
+     <Compile Include="Assets\colision_tapa.cs" />
+     <Compile Include="Assets\seguir_valvula.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

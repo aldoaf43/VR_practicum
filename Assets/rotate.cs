@@ -10,13 +10,13 @@ public class rotate : MonoBehaviour
     private Rigidbody rb;
     [SerializeField] private Vector3 _rotation;
     [SerializeField] private float _speed;
-    public static int pasar;
-    private int regresar;
+    public static int regresar;
+    public static int contar;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         regresar=0;
-        
+        contar=0;
     }
     
     private Vector3 final= new Vector3(0,0,124f);
@@ -30,7 +30,14 @@ public class rotate : MonoBehaviour
        
        if(rb.transform.rotation.z>0.87 && regresar==0){
             regresar=1;
+            contar++;
+        }
+        if (piston.pasar==0)
+        {
+            if (rb.transform.rotation.z<=0.87 && regresar==0){
+                rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(final),step);
             
+            }
         }
         if (rb.transform.rotation.z<=0.87 && regresar==0){
             rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(final),step);
@@ -42,9 +49,13 @@ public class rotate : MonoBehaviour
             regresar=0;
             
         }
-        if(rb.transform.rotation.z>=-0.11 && regresar==1){
-            rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(inicial),step);
+        if (piston.pasar==1)
+        {
+           if(rb.transform.rotation.z>=-0.11 && regresar==1){
+                rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(inicial),step);
+            } 
         }
+
         
     }
 
