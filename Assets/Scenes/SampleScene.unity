@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_CameraGameObject: {fileID: 1661276748}
   m_TrackingOriginMode: 1
   m_TrackingSpace: 3
-  m_CameraYOffset: 2.22
+  m_CameraYOffset: 1.7
 --- !u!4 &757648051
 Transform:
   m_ObjectHideFlags: 0
