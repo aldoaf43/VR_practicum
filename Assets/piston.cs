@@ -17,6 +17,12 @@ public class piston : MonoBehaviour
         pasar=0;
         empezar=0;
         StartCoroutine(ExampleCoroutine());
+        /*final=new Vector3(rb.transform.position.x,rb.transform.position.y,rb.transform.position.z-0.1626f);
+        final_1=new Vector3(final.x,final.y,final.z-0.1f);
+        inicial=rb.transform.position;
+        inicial_1=new Vector3(inicial.x,inicial.y,inicial.z+0.1f);
+        print (""+final);*/
+        
     }
     // Update is called once per frame
 
@@ -25,10 +31,10 @@ public class piston : MonoBehaviour
         yield return new WaitForSeconds(1);
         empezar=1;
     }
-    private Vector3 final= new Vector3(0.1064f,0.8109f,-0.043f);
-    private Vector3 final_1= new Vector3(0.1064f,0.8109f,-0.044f);
-    private Vector3 inicial= new Vector3(0.1064f,0.8109f,-0.128f);
-    private Vector3 inicial_1= new Vector3(0.1064f,0.8109f,-0.127f);
+    private Vector3 final= new Vector3(0.2123f,1.523f,-0.094f);
+    private Vector3 final_1= new Vector3(0.2123f,1.523f,-0.1f);
+    private Vector3 inicial= new Vector3(0.2123f,1.523f,-0.2566f);
+    private Vector3 inicial_1= new Vector3(0.2123f,1.523f,-0.25f);
     
     
     void Update (){
@@ -47,7 +53,7 @@ public class piston : MonoBehaviour
                 }
             }
             
-            
+            //print("pasar: "+pasar);
             if(rb.transform.position.z<inicial_1.z && pasar==1){
                 pasar=0;
                 

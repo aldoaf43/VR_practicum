@@ -20,20 +20,19 @@ public class rotate : MonoBehaviour
     }
     
     private Vector3 final= new Vector3(0,0,124f);
-    private Vector3 final_1= new Vector3(0,0,123f);
     private Vector3 inicial= new Vector3(0,0,-14f);
-    private Vector3 inicial_1= new Vector3(0,0,-13f);
     
     void Update (){
         float step=_speed*Time.deltaTime;
         
        
        if(rb.transform.rotation.z>0.87 && regresar==0){
-            regresar=1;
-            contar++;
-        }
+                regresar=1;
+                contar++;
+            }
         if (piston.pasar==0)
         {
+            
             if (rb.transform.rotation.z<=0.87 && regresar==0){
                 rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, Quaternion.Euler(final),step);
             
@@ -44,7 +43,7 @@ public class rotate : MonoBehaviour
             
             }
         
-        print("contar: "+contar);
+        //print("regresar: "+regresar);
         
         if(rb.transform.rotation.z<-0.11 && regresar==1){
             regresar=0;

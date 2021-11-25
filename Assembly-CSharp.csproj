@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3ff76392-3999-8291-b341-d2c16cc96a23}</ProjectGuid>
+    <ProjectGuid>{58f71c4e-582c-b6cc-37c7-2bfea38d4c5c}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,12 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Meshing Subsystem Feature\FallingSphere.cs" />
+     <Compile Include="Assets\mover_Tapa_4.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Intercept Feature\InterceptMessageHandler.cs" />
+     <Compile Include="Assets\mover_tapa_1.cs" />
      <Compile Include="Assets\Viveport\Scripts\MainThreadDispatcher.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_Subscription.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\ParserToken.cs" />
      <Compile Include="Assets\Viveport\Scripts\Viveport.cs" />
+     <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Meshing Subsystem Feature\MeshingTeapotFeature.cs" />
      <Compile Include="Assets\GraphVisualizer\Clients\GraphVisualizerClient.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\Lexer.cs" />
      <Compile Include="Assets\rot_valvula.cs" />
@@ -52,22 +57,22 @@
      <Compile Include="Assets\seguir_valvula.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonException.cs" />
      <Compile Include="Assets\colision_tapa.cs" />
+     <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Intercept Feature\InterceptCreateSessionFeature.cs" />
      <Compile Include="Assets\piston.cs" />
+     <Compile Include="Assets\mover_tapa_3.cs" />
      <Compile Include="Assets\rotate.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_Deeplink.cs" />
      <Compile Include="Assets\Viveport\Scripts\Viveport_Internal.cs" />
+     <Compile Include="Assets\mover_tapa_6.cs" />
+     <Compile Include="Assets\mover_tapa_5.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Meshing Subsystem Feature\MeshingBehaviour.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo.cs" />
+     <Compile Include="Assets\mover_tapa_2.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_MainThreadDispatcher.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_IAP.cs" />
      <Compile Include="Assets\Viveport\Scripts\PEMKeyLoader.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_DLC.cs" />
-     <Compile Include="Assets\mover_tapa_1.cs" />
-     <Compile Include="Assets\mover_tapa_2.cs" />
-     <Compile Include="Assets\mover_tapa_3.cs" />
-     <Compile Include="Assets\mover_Tapa_4.cs" />
-     <Compile Include="Assets\mover_tapa_5.cs" />
-     <Compile Include="Assets\mover_tapa_6.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -642,121 +647,125 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.InteractiveTutorialsFramework">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.InteractionSubsystems">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.InteractionSubsystems.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.InteractionSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.TestHelpers">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.TestHelpers.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.TestHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARSubsystems">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus">
-        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\MPS festo\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit">
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
+        <HintPath>C:\Users\aldiu\OneDrive\Documentos\Universidad\7mo semestre\Practicum\practicum_vr\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ControllerSample.csproj">
+      <Project>{937c28d4-709b-38eb-218f-79e4b92fe702}</Project>
+      <Name>ControllerSample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
