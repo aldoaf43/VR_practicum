@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Meshing Subsystem Feature\FallingSphere.cs" />
      <Compile Include="Assets\mover_Tapa_4.cs" />
+     <Compile Include="Assets\script.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonReader.cs" />
      <Compile Include="Assets\Samples\OpenXR Plugin\1.2.8\Intercept Feature\InterceptMessageHandler.cs" />
      <Compile Include="Assets\mover_tapa_1.cs" />
@@ -54,6 +55,7 @@
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonWriter.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonData.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_ArcadeSession.cs" />
+     <Compile Include="Assets\revisar_tapas.cs" />
      <Compile Include="Assets\seguir_valvula.cs" />
      <Compile Include="Assets\Viveport\Scripts\LitJson\JsonException.cs" />
      <Compile Include="Assets\colision_tapa.cs" />
@@ -73,6 +75,8 @@
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_IAP.cs" />
      <Compile Include="Assets\Viveport\Scripts\PEMKeyLoader.cs" />
      <Compile Include="Assets\Viveport\Example\Scripts\ViveportDemo_DLC.cs" />
+     <Compile Include="Assets\verificar_tapa.cs" />
+     <Compile Include="Assets\cambiar_color.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -652,17 +656,14 @@
     <Reference Include="UnityEditor.InteractiveTutorialsFramework">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.WindowsMixedReality">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
+        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
@@ -706,12 +707,6 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.InteractionSubsystems">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.InteractionSubsystems.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.WindowsMixedReality.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.OpenXR.TestHelpers">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.TestHelpers.dll</HintPath>
     </Reference>
@@ -724,23 +719,17 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARSubsystems.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARSubsystems">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.OpenXR">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
+        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
@@ -748,17 +737,11 @@
     <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
         <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-        <HintPath>C:\Users\aldiu\OneDrive\Escritorio\practicum_vr\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

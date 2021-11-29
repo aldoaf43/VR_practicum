@@ -24,7 +24,7 @@ public class mover_tapa_1 : MonoBehaviour
     {
         float speed=100f;
         pos_inicial=rb.transform.position;
-        Vector3 pos_valvula= new Vector3(seguir_valvula.objeto.x+inicial.x-0.225f,seguir_valvula.objeto.y+dif.y+(0.056667f),seguir_valvula.objeto.z-dif.z+0.01f);
+        Vector3 pos_valvula= new Vector3(seguir_valvula.objeto.x+inicial.x-0.225f,seguir_valvula.objeto.y+dif.y+(0.056667f*5),seguir_valvula.objeto.z-dif.z+0.01f);
         if(mover_tapa==1 && rotate.contar%2==0){
             rb.constraints=RigidbodyConstraints.FreezeRotation;
             rb.constraints=RigidbodyConstraints.FreezePositionX;
